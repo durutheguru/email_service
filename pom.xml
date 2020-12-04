@@ -252,10 +252,10 @@
                     <appName>lit-sands-29217</appName>
                     <includeTarget>false</includeTarget>
                     <includes>
-                        <include>target/${project.version}</include>
+                        <include>target/email-service-${project.version}.jar</include>
                     </includes>
                     <processTypes>
-                        <web>java -jar ./target/${project.version} -Djasypt.encryptor.password=julianduru</web>
+                        <web>java -jar ./target/email-service-${project.version}.jar -Djasypt.encryptor.password=julianduru</web>
                     </processTypes>
                 </configuration>
             </plugin>
