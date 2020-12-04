@@ -16,6 +16,7 @@
     <name>email-service</name>
     <description>Email Service Application for email dispatch</description>
 
+
     <properties>
         <java.version>14</java.version>
         <maven.compiler.source>14</maven.compiler.source>
@@ -24,6 +25,7 @@
         <spring-boot.version>${project.parent.version}</spring-boot.version>
         <camel.version>3.0.0-RC3</camel.version>
     </properties>
+    
 
     <dependencyManagement>
 
