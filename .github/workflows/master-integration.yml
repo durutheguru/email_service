@@ -44,7 +44,11 @@ jobs:
 #          sed -i "s/<artifact.version>.*<\/artifact.version>/<artifact.version>${NEW_VERSION}-SNAPSHOT<\/artifact.version>/g" pom.xml
       - name: Maven Package
         run: |
-          mvn package heroku:deploy -s settings.xml -f pom.xml -DskipTests
+          mvn -e package -s settings.xml -f pom.xml -DskipTests
+      - name: Maven Heroku Deploy
+        run: |
+          ls /home/runner/work/email_service/email_service/target
+          mvn -e heroku:deploy -s settings.xml -f pom.xml -DskipTests
       - name: Upgrading Version
         run: |
           RELEASE_TAG=${{ steps.gitversion.outputs.semVer }}
