@@ -12,7 +12,7 @@
 
     <groupId>com.julianduru</groupId>
     <artifactId>email-service</artifactId>
-    <version>0.2.5-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>email-service</name>
     <description>Email Service Application for email dispatch</description>
 
@@ -255,7 +255,7 @@
                         <include>target/email-service-${project.version}.jar</include>
                     </includes>
                     <processTypes>
-                        <web>java -Djasypt.encryptor.password=julianduru -jar ./target/email-service-${project.version}.jar</web>
+                        <web>java -jar ./target/email-service-${project.version}.jar -Djasypt.encryptor.password=julianduru</web>
                     </processTypes>
                 </configuration>
             </plugin>
