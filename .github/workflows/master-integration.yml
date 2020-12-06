@@ -46,6 +46,8 @@ jobs:
         run: |
           mvn -e package -s settings.xml -f pom.xml -DskipTests
       - name: Maven Heroku Deploy
+        env:
+          HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
         run: |
           ls /home/runner/work/email_service/email_service/target
           mvn -e heroku:deploy -s settings.xml -f pom.xml -DskipTests
