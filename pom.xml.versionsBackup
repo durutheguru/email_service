@@ -12,7 +12,7 @@
 
     <groupId>com.julianduru</groupId>
     <artifactId>email-service</artifactId>
-    <version>0.2.5-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>email-service</name>
     <description>Email Service Application for email dispatch</description>
 
