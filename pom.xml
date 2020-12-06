@@ -255,7 +255,7 @@
                         <include>target/email-service-${project.version}.jar</include>
                     </includes>
                     <processTypes>
-                        <web>java -jar ./target/email-service-${project.version}.jar -Djasypt.encryptor.password=julianduru</web>
+                        <web>java -Djasypt.encryptor.password=julianduru -jar ./target/email-service-${project.version}.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
