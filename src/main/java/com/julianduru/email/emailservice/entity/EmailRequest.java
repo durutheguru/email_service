@@ -1,7 +1,7 @@
 package com.julianduru.email.emailservice.entity;
 
 
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.queues.api.dto.EmailDTO;
 import com.sendgrid.Response;
 import com.sendgrid.helpers.mail.Mail;
 import com.sendgrid.helpers.mail.objects.Content;
@@ -13,7 +13,6 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotEmpty;
-import java.time.ZonedDateTime;
 import java.util.List;
 
 

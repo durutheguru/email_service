@@ -14,15 +14,12 @@ import org.springframework.stereotype.Component;
 public class EmailQueueService extends RouteBuilder {
 
 
-    private final QueueConfig queueConfig;
-
-
     private final EmailRequestService requestService;
 
 
     @Override
     public void configure() throws Exception {
-        from("jms:queue:EMAIL_DISPATCH")
+        from("rabbitmq:SOCIALOTTO?routingKey=email_dispatch")
             .log("Fetched Requests: ${body}")
             .bean(requestService, "saveEmailRequests");
     }

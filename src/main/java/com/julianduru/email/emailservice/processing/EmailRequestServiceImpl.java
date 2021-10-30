@@ -5,7 +5,7 @@ import com.julianduru.email.emailservice.entity.EmailRequest;
 import com.julianduru.email.emailservice.entity.EmailStatus;
 import com.julianduru.email.emailservice.processing.exception.EmailException;
 import com.julianduru.email.emailservice.repository.EmailRequestRepository;
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.queues.api.dto.EmailDTO;
 import com.sendgrid.Response;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

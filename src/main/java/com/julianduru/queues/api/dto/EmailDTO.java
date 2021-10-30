@@ -1,4 +1,4 @@
-package com.julianduru.omarze.api.dto;
+package com.julianduru.queues.api.dto;
 
 
 import lombok.Data;
