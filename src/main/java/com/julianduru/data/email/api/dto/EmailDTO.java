@@ -1,4 +1,4 @@
-package com.julianduru.omarze.api.dto;
+package com.julianduru.data.email.api.dto;
 
 
 import lombok.Data;

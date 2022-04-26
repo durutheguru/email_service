@@ -6,11 +6,9 @@ import com.julianduru.email.emailservice.TestSetup;
 import com.julianduru.email.emailservice.data.EmailDTODataProvider;
 import com.julianduru.email.emailservice.processing.EmailRequestDTO;
 import com.julianduru.email.emailservice.processing.controller.EmailRequestController;
-import com.julianduru.email.emailservice.repository.EmailRequestRepository;
 import com.julianduru.email.emailservice.util.JSONUtil;
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.data.email.api.dto.EmailDTO;
 import lombok.Builder;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 

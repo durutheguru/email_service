@@ -1,8 +1,7 @@
 package com.julianduru.email.emailservice.processing;
 
 
-import com.julianduru.email.emailservice.entity.EmailRequest;
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.data.email.api.dto.EmailDTO;
 import lombok.*;
 
 import javax.validation.Valid;

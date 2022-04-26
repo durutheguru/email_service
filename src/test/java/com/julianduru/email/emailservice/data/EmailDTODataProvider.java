@@ -4,11 +4,9 @@ package com.julianduru.email.emailservice.data;
 import com.github.javafaker.Faker;
 import com.julianduru.email.emailservice.entity.EmailType;
 import com.julianduru.email.emailservice.util.NullAwareBeanUtils;
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.data.email.api.dto.EmailDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 /**
  * created by julian

@@ -4,14 +4,12 @@ package com.julianduru.email.emailservice.processing.controller;
 import com.julianduru.email.emailservice.Constants;
 import com.julianduru.email.emailservice.processing.EmailRequestDTO;
 import com.julianduru.email.emailservice.processing.EmailRequestService;
-import com.julianduru.omarze.api.dto.EmailDTO;
+import com.julianduru.data.email.api.dto.EmailDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
 import javax.validation.Valid;
-import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
 /**
